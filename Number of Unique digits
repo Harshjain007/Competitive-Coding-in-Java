@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class SecondLast {
+    public static int secondLastD (int a) {
+        if (a <= 9 && a<=9) {
+            return -1;
+        }
+        else {
+            if (a<0) {
+                a = a * -1;
+            }
+            a = a % 100; // 197 % 100 = 97, a = 97
+            a = a/10; // 97/10 = 9
+            return a;
+
+        }
+    }
+    public static void main (String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        System.out.println(SecondLast.secondLastD(a));
+        sc.close();
+    }
+}
